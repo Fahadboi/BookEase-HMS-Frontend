@@ -42,7 +42,7 @@ const Feedback = () => {
         const data: Feedback[] = await response.json();
         setFeedbacks(data);
       } catch (err) {
-        setError('Error fetching feedbacks.');
+        setError(err);
         console.error(err);
       } finally {
         setLoading(false);
