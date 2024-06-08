@@ -42,7 +42,7 @@ const Feedback = () => {
         const data: Feedback[] = await response.json();
         setFeedbacks(data);
       } catch (err) {
-        setError('Error fetching feedbacks.');
+        setError(err);
         console.error(err);
       } finally {
         setLoading(false);
@@ -92,9 +92,6 @@ const Feedback = () => {
     return <div>Loading...</div>;
   }
 
-  if (error) {
-    return <div>{error}</div>;
-  }
 
   return (
     <DefaultLayout>
