@@ -110,7 +110,7 @@ const Feedback = () => {
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {feedbacks.map((feedback) => (
+            {feedbacks.length > 0 ? feedbacks.map((feedback) => (
               <article key={feedback.feedbackId} className="bg-blue-50 rounded-md p-6 flex w-90 flex-col items-center justify-center">
                 <div className="flex items-center gap-x-4 text-base">
                   <time dateTime={new Date(feedback.submissionDate).toISOString()} className="text-boxdark">
@@ -151,7 +151,7 @@ const Feedback = () => {
                   Delete Feedback
                 </Button>
               </article>
-            ))}
+            )) : <p>No Feedbacks Found.</p>}
           </div>
         </div>
       </div>
