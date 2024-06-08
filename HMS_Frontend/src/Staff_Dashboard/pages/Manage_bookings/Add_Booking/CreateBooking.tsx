@@ -48,11 +48,7 @@ export default function CreateBooking() {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/booking/createBooking?roomId=${formData.roomID}&guestId=${formData.guestID}&checkIn=${newFromDate}&checkOut=${newToDate}`,
-=======
         `https://${apiUrl}/api/booking/createBooking?roomId=${formData.roomID}&guestId=${formData.guestID}&checkIn=${newFromDate}&checkOut=${newToDate}`,
->>>>>>> master
         {
           method: 'POST',
           headers: {
