@@ -92,9 +92,6 @@ const Feedback = () => {
     return <div>Loading...</div>;
   }
 
-  if (error) {
-    return <div>{error}</div>;
-  }
 
   return (
     <DefaultLayout>
