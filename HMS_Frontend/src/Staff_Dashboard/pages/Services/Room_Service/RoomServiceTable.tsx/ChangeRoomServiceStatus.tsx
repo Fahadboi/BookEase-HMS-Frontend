@@ -22,11 +22,7 @@ export function ChangeRoomServiceStatus({ RoomServiceId }: RoomServiceProps) {
   const handleStatus = async () => {
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/roomService/roomServiceCompleted/${RoomServiceId}`,
-=======
         `https://${apiUrl}/api/roomService/roomServiceCompleted/${RoomServiceId}`,
->>>>>>> master
         {
           method: 'PATCH',
           headers: {

@@ -22,11 +22,7 @@ const ServiceDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-<<<<<<< HEAD
-        const response = await fetch(`${apiUrl}/api/service/getAllServiceTypes`);
-=======
         const response = await fetch(`https://${apiUrl}/api/service/getAllServiceTypes`);
->>>>>>> master
         if (!response.ok) {
           throw new Error('Failed to fetch services');
         }
@@ -49,11 +45,7 @@ const ServiceDetail = () => {
     }
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/api/service/deleteService/${serviceTypeID}`, {
-=======
       const response = await fetch(`https://${apiUrl}/api/service/deleteService/${serviceTypeID}`, {
->>>>>>> master
         method: 'DELETE',
       });
 

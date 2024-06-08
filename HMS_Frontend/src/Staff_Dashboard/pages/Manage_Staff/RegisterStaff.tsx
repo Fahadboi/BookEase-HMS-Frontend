@@ -26,11 +26,7 @@ const RegisterStaff = () => {
     }
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/staff/registerStaff`, {
-=======
       const response = await fetch(`https://${apiUrl}/staff/registerStaff`, {
->>>>>>> master
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

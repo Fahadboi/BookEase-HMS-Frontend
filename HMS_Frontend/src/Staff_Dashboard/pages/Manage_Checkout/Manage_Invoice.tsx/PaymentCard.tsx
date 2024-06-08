@@ -42,11 +42,7 @@ export function PaymentCard({ invoiceID }: InvoiceProp) {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/payment/makePayment/${invoiceID}?totalAmount=${amountPaid}`,
-=======
         `https://${apiUrl}/api/payment/makePayment/${invoiceID}?totalAmount=${amountPaid}`,
->>>>>>> master
         {
           method: 'POST',
           headers: {

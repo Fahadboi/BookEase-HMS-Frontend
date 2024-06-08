@@ -39,11 +39,7 @@ export default function AddRoom() {
     }
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/room/createRoom`, {
-=======
       const response = await fetch(`https://${apiUrl}/room/createRoom`, {
->>>>>>> master
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

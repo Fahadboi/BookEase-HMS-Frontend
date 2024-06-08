@@ -53,11 +53,7 @@ interface ExtendCheckOutDateProps {
     
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/booking/extend-checkout-date/${bookingId}?extendDays=${formData.totalDays}`,
-=======
         `https://${apiUrl}/api/booking/extend-checkout-date/${bookingId}?extendDays=${formData.totalDays}`,
->>>>>>> master
         {
           method: 'PATCH',
           headers: {

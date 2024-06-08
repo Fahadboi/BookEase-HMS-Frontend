@@ -27,11 +27,7 @@ const BookingDetail = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-<<<<<<< HEAD
-          `${apiUrl}/api/booking/getAllBookings`,
-=======
           `https://${apiUrl}/api/booking/getAllBookings`,
->>>>>>> master
         );
         if (!response.ok) {
           throw new Error('Failed to fetch bookings');
@@ -73,11 +69,7 @@ const BookingDetail = () => {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/booking/cancel-booking/${bookingId}`,
-=======
         `https://${apiUrl}/api/booking/cancel-booking/${bookingId}`,
->>>>>>> master
         {
           method: 'PATCH',
         },

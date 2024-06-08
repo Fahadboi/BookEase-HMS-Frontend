@@ -85,11 +85,7 @@ export default function AddServiceType() {
     }
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/api/service/createService`, {
-=======
       const response = await fetch(`https://${apiUrl}/api/service/createService`, {
->>>>>>> master
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -26,11 +26,7 @@ const StaffDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-<<<<<<< HEAD
-        const response = await fetch(`${apiUrl}/staff/getAllStaffDetails`);
-=======
         const response = await fetch(`https://${apiUrl}/staff/getAllStaffDetails`);
->>>>>>> master
         if (!response.ok) {
           throw new Error('Failed to fetch staff details');
         }

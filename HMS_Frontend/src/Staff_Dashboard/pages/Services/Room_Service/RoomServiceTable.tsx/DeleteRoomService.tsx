@@ -22,11 +22,7 @@ export function DeleteRoomService({ RoomServiceId }: RoomServiceProps) {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/roomService/deleteRoomService/${RoomServiceId}`,
-=======
         `https://${apiUrl}/api/roomService/deleteRoomService/${RoomServiceId}`,
->>>>>>> master
         {
           method: 'DELETE',
           headers: {

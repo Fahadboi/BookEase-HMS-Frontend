@@ -65,11 +65,7 @@ export default function OrderRoomService() {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/booking/getBookingsOfRoom/${roomNo}`,
-=======
         `https://${apiUrl}/api/booking/getBookingsOfRoom/${roomNo}`,
->>>>>>> master
         {
           method: 'GET',
           headers: {

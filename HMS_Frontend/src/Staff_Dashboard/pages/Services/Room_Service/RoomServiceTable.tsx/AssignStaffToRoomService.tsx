@@ -40,11 +40,7 @@ export function AssignStaffToRoomService({
     const fetchData = async () => {
       try {
         const response = await fetch(
-<<<<<<< HEAD
-          `${apiUrl}/staff/getAllStaffDetails`,
-=======
           `https://${apiUrl}/staff/getAllStaffDetails`,
->>>>>>> master
         );
         if (!response.ok) {
           throw new Error('Failed to fetch Staff');
@@ -100,11 +96,7 @@ export function AssignStaffToRoomService({
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/roomService/assignStaffToRoomService/${RoomServiceId}/${selectedStaff}`,
-=======
         `https://${apiUrl}/api/roomService/assignStaffToRoomService/${RoomServiceId}/${selectedStaff}`,
->>>>>>> master
         {
           method: 'PATCH',
           headers: {

@@ -36,11 +36,7 @@ export default function RoomServiceDialog({ bookingId }: Booking) {
     const fetchData = async () => {
       try {
         const response = await fetch(
-<<<<<<< HEAD
-          `${apiUrl}/api/service/getAllServiceTypes`,
-=======
           `https://${apiUrl}/api/service/getAllServiceTypes`,
->>>>>>> master
         );
         if (!response.ok) {
           throw new Error('Failed to fetch Service Types');
@@ -100,11 +96,7 @@ export default function RoomServiceDialog({ bookingId }: Booking) {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/roomService/createRoomService`,
-=======
         `https://${apiUrl}/api/roomService/createRoomService`,
->>>>>>> master
         {
           method: 'POST',
           headers: {

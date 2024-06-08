@@ -30,11 +30,7 @@ const Feedback = () => {
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-<<<<<<< HEAD
-        const response = await fetch(`${apiUrl}/api/feedback/getAllFeedbacks`, {
-=======
         const response = await fetch(`https://${apiUrl}/api/feedback/getAllFeedbacks`, {
->>>>>>> master
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -58,11 +54,7 @@ const Feedback = () => {
 
   const handleDelete = async (feedbackId: number) => {
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/api/feedback/deleteFeedback/${feedbackId}`, {
-=======
       const response = await fetch(`https://${apiUrl}/api/feedback/deleteFeedback/${feedbackId}`, {
->>>>>>> master
         method: 'DELETE',
       });
       if (!response.ok) {

@@ -26,11 +26,7 @@ const ChangePassword = () => {
     }
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/guest/changePassword`, {
-=======
       const response = await fetch(`https://${apiUrl}/guest/changePassword`, {
->>>>>>> master
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

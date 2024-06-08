@@ -72,11 +72,7 @@ export default function GenerateBillForBooking() {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/billing/generateBill/${bookingID}`,
-=======
         `https://${apiUrl}/api/billing/generateBill/${bookingID}`,
->>>>>>> master
         {
           method: 'POST',
           headers: {

@@ -24,11 +24,7 @@ const RoomDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-<<<<<<< HEAD
-        const response = await fetch(`${apiUrl}/room/getAllRooms`);
-=======
         const response = await fetch(`https://${apiUrl}/room/getAllRooms`);
->>>>>>> master
         if (!response.ok) {
           throw new Error('Failed to fetch rooms');
         }

@@ -22,11 +22,7 @@ export function CancelRoomService({ RoomServiceId }: RoomServiceProps) {
   const handleCancel = async () => {
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/roomService/cancelRoomService/${RoomServiceId}`,
-=======
         `https://${apiUrl}/roomService/cancelRoomService/${RoomServiceId}`,
->>>>>>> master
         {
           method: 'PATCH',
           headers: {

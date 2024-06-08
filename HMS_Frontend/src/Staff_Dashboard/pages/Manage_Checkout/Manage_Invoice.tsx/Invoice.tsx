@@ -55,11 +55,7 @@ function Invoice() {
   const fetchBilling = async () => {
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/billing/generateBill/${bookingId}`,
-=======
         `https://${apiUrl}/api/billing/generateBill/${bookingId}`,
->>>>>>> master
         {
           method: 'POST',
           headers: {
@@ -96,11 +92,7 @@ function Invoice() {
   const initiateCheckOut = async () => {
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/booking/initiateCheckOut/${bookingId}`,
-=======
         `https://${apiUrl}/api/booking/initiateCheckOut/${bookingId}`,
->>>>>>> master
         {
           method: 'PATCH',
         },
@@ -122,11 +114,7 @@ function Invoice() {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/invoice/generateInvoice/${billing?.billingID}`,
-=======
         `https://${apiUrl}/api/invoice/generateInvoice/${billing?.billingID}`,
->>>>>>> master
         {
           method: 'POST',
           headers: {
@@ -168,11 +156,7 @@ function Invoice() {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/roomService/getAllRoomServiceByBookingID/${bookingId}`,
-=======
         `https://${apiUrl}/api/roomService/getAllRoomServiceByBookingID/${bookingId}`,
->>>>>>> master
       );
       if (!response.ok) {
         throw new Error('No room services found for this booking.');

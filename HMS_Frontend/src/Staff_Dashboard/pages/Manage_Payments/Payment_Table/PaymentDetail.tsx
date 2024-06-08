@@ -29,11 +29,7 @@ const PaymentDetail = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-<<<<<<< HEAD
-          `${apiUrl}/api/invoice/getAllInvoices`,
-=======
           `https://${apiUrl}/api/invoice/getAllInvoices`,
->>>>>>> master
           {
             method: 'GET',
             headers: {

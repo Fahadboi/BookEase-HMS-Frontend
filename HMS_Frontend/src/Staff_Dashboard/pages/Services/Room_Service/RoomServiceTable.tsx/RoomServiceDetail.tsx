@@ -33,11 +33,7 @@ const RoomServiceDetail = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-<<<<<<< HEAD
-          `${apiUrl}/api/roomService/getAllRoomService`,
-=======
           `https://${apiUrl}/api/roomService/getAllRoomService`,
->>>>>>> master
           {
             method: 'GET',
             headers: {

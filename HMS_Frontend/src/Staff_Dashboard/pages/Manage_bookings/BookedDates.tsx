@@ -32,11 +32,7 @@ export default function BookedDates() {
     setError('');
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${apiUrl}/api/booking/booked-dates/${roomNo}`, {
-=======
       const response = await fetch(`https://${apiUrl}/api/booking/booked-dates/${roomNo}`, {
->>>>>>> master
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

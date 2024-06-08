@@ -24,11 +24,7 @@ const GuestDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-<<<<<<< HEAD
-        const response = await fetch(`${apiUrl}/guest/getAllGuestDetails`);
-=======
         const response = await fetch(`https://${apiUrl}/guest/getAllGuestDetails`);
->>>>>>> master
         if (!response.ok) {
           throw new Error('Failed to fetch guests');
         }

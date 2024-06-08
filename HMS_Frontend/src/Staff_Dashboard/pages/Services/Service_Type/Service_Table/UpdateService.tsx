@@ -88,11 +88,7 @@ interface UpdateServiceProps {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
-        `${apiUrl}/api/service/updateService/${serviceId}`,
-=======
         `https://${apiUrl}/api/service/updateService/${serviceId}`,
->>>>>>> master
         {
           method: 'PATCH',
           headers: {
